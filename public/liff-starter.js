@@ -170,7 +170,7 @@ function registerButtonHandlers() {
             var userid = profile.userId;
             window.alert(userid);
             if (userid !== null && userid !== '') {
-                   Cookie("LIFFID","",-1); //remove created cookie onload
+                   //Cookie("LIFFID","",-1); //remove created cookie onload
                    document.cookie = "LIFFID=" + userid + ";"
                    var x = document.cookie;
                    window.alert(x);
