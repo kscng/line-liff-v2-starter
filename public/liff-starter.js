@@ -1,7 +1,6 @@
 window.onload = function() {
     const useNodeJS = true;   // if you are not using a node server, set this value to false
     const defaultLiffId = "";   // change the default LIFF value if you are not using a node server
-    document.cookie = "LIFFID=No Line Login"; //default cookie
     // DO NOT CHANGE THIS
     let myLiffId = "";
 
@@ -71,6 +70,7 @@ function initializeApp() {
         document.getElementById('liffLoginButton').disabled = true;
     } else {
         document.getElementById('liffLogoutButton').disabled = true;
+        document.cookie = "LIFFID=No Line Login"; //Cookie when not logged in
     }
 }
 
