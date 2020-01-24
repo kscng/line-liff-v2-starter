@@ -166,6 +166,14 @@ function registerButtonHandlers() {
     document.getElementById('getProfileButton').addEventListener('click', function() {
         liff.getProfile().then(function(profile) {
             document.getElementById('userIdProfileField').textContent = profile.userId;
+            //create profile session cookie for GTM - 24-Jan-2020
+            var userid = profile.userId
+            if (userid !== null && userid !== '') {
+                   document.cookie = "LIFFID=" + userid + ";"
+            } else {
+                   document.cookie = "LIFFID=No Line Login";
+            }
+            //End - create profile session cookie for GTM
             document.getElementById('displayNameField').textContent = profile.displayName;
 
             const profilePictureDiv = document.getElementById('profilePictureDiv');
