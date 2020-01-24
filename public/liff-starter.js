@@ -1,7 +1,7 @@
 window.onload = function() {
     const useNodeJS = true;   // if you are not using a node server, set this value to false
     const defaultLiffId = "";   // change the default LIFF value if you are not using a node server
-
+    document.cookie = "LIFFID=No Line Login"; //default cookie
     // DO NOT CHANGE THIS
     let myLiffId = "";
 
@@ -169,9 +169,8 @@ function registerButtonHandlers() {
             //create profile session cookie for GTM - 24-Jan-2020
             var userid = profile.userId
             if (userid !== null && userid !== '') {
+                   Cookie("LIFFID",null,-1); //remove created cookie onload
                    document.cookie = "LIFFID=" + userid + ";"
-            } else {
-                   document.cookie = "LIFFID=No Line Login";
             }
             //End - create profile session cookie for GTM
             document.getElementById('displayNameField').textContent = profile.displayName;
