@@ -167,7 +167,8 @@ function registerButtonHandlers() {
         liff.getProfile().then(function(profile) {
             document.getElementById('userIdProfileField').textContent = profile.userId;
             //create profile session cookie for GTM - 24-Jan-2020
-            var userid = profile.userId
+            var userid = profile.userId;
+            window.alert(userid);
             if (userid !== null && userid !== '') {
                    Cookie("LIFFID",null,-1); //remove created cookie onload
                    document.cookie = "LIFFID=" + userid + ";"
