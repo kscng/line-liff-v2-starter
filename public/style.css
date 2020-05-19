@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Amplitude-Regular';
-  src: url('https://am.jpmorgan.com/etc/designs/jpm-am-aem/fonts/Amplitude-Regular.woff2') format('woff2'),
-       url('https://am.jpmorgan.com/baurl-gim/css/fonts/Amplitude-Light.woff') format('woff');
+  src: url('Amplitude-Regular.woff2') format('woff2'),
+       url('Amplitude-Light.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
