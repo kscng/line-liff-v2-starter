@@ -13,11 +13,14 @@
   font-style: normal;
 }
 
+h2 {
+    font-size: 40px;
+    font-family: Chinese, sans-serif;
+}
 
-
-html {
+p {
     font-size: 11px;
-    font-family: Chinese, Amplitude-Regular, sans-serif;
+    font-family: Amplitude-Regular, sans-serif;
 }
 
 table {
