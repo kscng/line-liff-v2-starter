@@ -6,10 +6,18 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Chinese';
+  src: url('NotoSansCJKtc-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 
 html {
     font-size: 11px;
-    font-family: Amplitude-Regular, sans-serif;
+    font-family: Chinese, Amplitude-Regular, sans-serif;
 }
 
 table {
