@@ -29,17 +29,17 @@
 
 h1 {
     font-size: 40px;
-    font-family: Chinese-Regular;
+    font-family: Chinese-Regular, Amplitude-Regular, sans-serif;
 }
 
 h2 {
     font-size: 40px;
-    font-family: Chinese-Medium;
+    font-family: Chinese-Medium, Amplitude-Regular, sans-serif;
 }
 
 h3 {
     font-size: 40px;
-    font-family: Chinese-Light;
+    font-family: Chinese-Light, Amplitude-Regular, sans-serif;
 }
 
 p {
