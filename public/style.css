@@ -7,15 +7,39 @@
 }
 
 @font-face {
-  font-family: 'Chinese';
+  font-family: 'Chinese-Regular';
   src: url('NotoSansCJKtc-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Chinese-Medium';
+  src: url('NotoSansCJKtc-Medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Chinese-Light';
+  src: url('NotoSansCJKtc-Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: Chinese-Regular;
+}
+
 h2 {
     font-size: 40px;
-    font-family: Chinese;
+    font-family: Chinese-Medium;
+}
+
+h3 {
+    font-size: 40px;
+    font-family: Chinese-Light;
 }
 
 p {
