@@ -24,6 +24,10 @@
   font-style: normal;
 }
 
+@import "compass/css3";
+
+@import url(https://fonts.googleapis.com/css?family=Lato:300);
+
 h1 {
     font-size: 40px;
     font-family: Chinese-Regular, Amplitude-Regular, sans-serif;
@@ -109,4 +113,66 @@ button {
 
 .hidden {
     display: none;
+}
+
+* {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 16px;
+  @include box-sizing(border-box);
+}
+
+$purple: #d94fed !default;
+
+body {
+  margin: 0;
+  background: lighten($purple, 30%);
+}
+.drag-me {
+  background: $purple;
+  width: 180px;
+  padding-left: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -90px;
+  margin-top: -20px;
+  cursor: move;
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+  @include transition(box-shadow .2s);
+  @include border-radius(2px);
+
+  &:hover {
+    @include box-shadow(darken($purple, 30%) 0 1px 3px);
+  }
+
+  &:active {
+    cursor: move;
+    cursor: -webkit-grabbing;
+    cursor: -moz-grabbing;
+  }
+
+  &:before {
+    content: '.';
+    position: absolute;
+    left: 14px;
+    font-size: 20px;
+    line-height: 20px;
+    color: darken($purple, 20%);
+    @include text-shadow(0 5px darken($purple, 20%),
+                         0 10px darken($purple, 20%),
+                         5px 0 darken($purple, 20%),
+                         5px 5px darken($purple, 20%),
+                         5px 10px darken($purple, 20%),
+                         10px 0 darken($purple, 20%),
+                         10px 5px darken($purple, 20%),
+                         10px 10px darken($purple, 20%));
+  }
+
+  span {
+    color: darken($purple, 40%);
+    line-height: 42px;
+  }
 }
