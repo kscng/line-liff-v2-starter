@@ -135,8 +135,8 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-left: -90px;
-  margin-top: -20px;
+  margin-left: 300px;
+  margin-top: 200px;
   cursor: move;
   cursor: -webkit-grab;
   cursor: -moz-grab;
