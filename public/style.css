@@ -127,7 +127,6 @@ $purple: #d94fed !default;
 
 body {
   margin: 0;
-  background: lighten($purple, 30%);
 }
 .drag-me {
   background: $purple;
